@@ -1,0 +1,25 @@
+#User defined
+user:
+  nodejs_version:
+    label:
+      Nodejs Version
+    hint:
+      Select a nodejs version
+    type:
+      select
+    values:
+      - "14"
+      - "16"
+      - "17"
+      - "18"
+      - "19"
+    target:
+      NODEJS_VERSION
+
+#System defaults
+system:
+  show_localpath_selector:
+    true
+  #Generate public ports for the docker image
+  ports:
+    http: NODEJS_HTTP_PORT
