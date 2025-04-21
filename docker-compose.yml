@@ -2,12 +2,16 @@ version: '3'
 services:
   nodejs:
     build:
-      context: '.'
+      context: 'nodejs'
+      dockerfile: 'Dockerfile'
       args:
-      - 'NODEJS_VERSION=${NODEJS_VERSION}'
+        NODEJS_VERSION: ${NODEJS_VERSION}
     volumes:
-      - ${APP_CODE_PATH_HOST}:/src
-    command: npm run start
+      - ${APP_CODE_PATH_HOST}:/home/node/app
+    expose:
+      - "${INTERNAL_HTTP_PORT}"
+    command: "sh -c \"npm run ${NODE_SCRIPT:-start} || sleep infinity\""
     ports:
       - "${NODEJS_HTTP_PORT}:3000"
-volumes: {}
+      # Need DockFusion to support this first
+      # - "${NODEJS_HTTP_PORT}:${INTERNAL_HTTP_PORT:-3000}"

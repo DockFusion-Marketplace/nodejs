@@ -1,0 +1,23 @@
+{
+  "name": "example-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DockFusion-Marketplace/nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DockFusion-Marketplace/nodejs/issues"
+  },
+  "homepage": "https://github.com/DockFusion-Marketplace/nodejs#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -4,17 +4,44 @@ user:
     label:
       Nodejs Version
     hint:
-      Select a nodejs version
+      Select a Nodejs version
     type:
       select
     values:
-      - "14"
-      - "16"
-      - "17"
+      - "lts"
       - "18"
-      - "19"
+      - "20"
+      - "22"
+      - "23"
     target:
       NODEJS_VERSION
+
+  node_script:
+    label:
+      Node script
+    hint:
+      Write the script you use to start your app
+    type:
+      text-input
+    defaultValue:
+      "start"
+    values:
+    target:
+      NODE_SCRIPT
+
+  # Need DockFusion to support this first
+  # internal_http_port:
+  #   label:
+  #     Internal http port
+  #   hint:
+  #     Write the port where your app is being hosted
+  #   type:
+  #     text-input
+  #   defaultValue:
+  #     "3000"
+  #   values:
+  #   target:
+  #     INTERNAL_HTTP_PORT
 
 #System defaults
 system:
