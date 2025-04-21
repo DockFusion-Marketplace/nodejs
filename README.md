@@ -1,20 +1,12 @@
-# What is Node.js?
+# Node.js in Docker
+This template sets up a ready-to-run Node.js development environment inside Docker. It’s perfect for building APIs, full-stack apps, or microservices — and works seamlessly with Dock Fusion for easy management.
 
-> Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+## 🚀 What's Included
+The quickest way to get started with the Deck Laravel Development Container is using docker-compose.
 
-[nodejs.org](https://nodejs.org/)
+- NODE (19+) — JavaScript runtime for backend tools, asset building, and full-stack functionality
+- npm/yarn — Package managers for installing Node-based tooling like Vite and Laravel Mix
 
-## Install
-  ### Using DECK
-    Install Nodejs from the DECK marketplace and follow the instructions on the GUI
-  ### From terminal with Docker
-    The quickest way to get started with the Nodejs Development Container is using docker-compose.
-    Download the ```docker-compose.yml``` file in the application directory:
-      ```
-      $ git clone https://github.com/deck-app/nodejs.git
-      $ cd nodejs
-      $ edit .env file as per your requirement
-      $ docker-compose up -d
-      ```
-## Modifying project settings
-  From the DECK app, go to stack list and click on project's More > configure > Advanced configuration Follow the instructions below and restart your stack from the GUI
+## 📦 Requirements
+- [Docker](https://www.docker.com)
+- [Dock Fusion](https://github.com/DockFusion/dock-fusion-app/releases)
